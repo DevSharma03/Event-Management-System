@@ -1,0 +1,388 @@
+/* General Styles */
+
+
+.index-body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #4d4d4d;
+}
+
+.header-index-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.index-list-design {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+/* Header Styles */
+.index-header-main {
+    background-color: #633b63;
+    padding: 20px 0;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-index {
+    font-size: 28px;
+    font-weight: 700;
+    color: #f5f5f5;
+}
+
+.index-nav-main ul li {
+    margin-left: 20px;
+}
+
+.index-nav-main ul li a {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.index-nav-main ul li a:hover {
+    background-color: #ff9f9f;
+}
+
+/* Hero Section */
+.index-hero-main {
+    background-image: url('https://www.shutterstock.com/image-vector/summer-lively-background-festival-outdoor-260nw-2320853037.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.hero-overlay h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-overlay p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.index-cta-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    animation: pulse 1.5s infinite;
+}
+
+.index-cta-button:hover {
+    background-color: #e5533b;
+}
+
+/* Event Listing */
+.index-events-section {
+    padding: 80px 0;
+    background-color: #ecf0f1;
+}
+
+.index-events-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+}
+
+#index-events1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#index-events1 li {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#index-events1 li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+#index-events1 li h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+#index-events1 li p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer */
+.index-footer-main {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.index-footer-main p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.index-footer-info {
+    margin-bottom: 20px;
+}
+
+.index-footer-info a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.index-footer-info a:hover {
+    color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .index-nav-main ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #index-events1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #index-events1 li {
+        width: 90%;
+    }
+
+    .hero-overlay h2 {
+        font-size: 32px;
+    }
+
+    .hero-overlay p {
+        font-size: 16px;
+    }
+}
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Adjusted width */
+    margin: 100px auto;
+    text-align: center;
+}
+
+.modal-content label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.close-modal-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.close-modal-btn:hover {
+    background-color: #e04e3b;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #4d4d4d; /* Text color */
+}
+
+/* Popup Styles (For both Registration and Show Registration) */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h3 {
+    margin-bottom: 20px;
+}
+
+.popup-content input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #633b63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup-content button:hover {
+    background-color: #8e5c8e; /* Lighter purple on hover */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+/* Registration Form */
+.register-form input,
+.register-form button {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.register-form input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.register-form button {
+    background-color: #633b63;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: #8e5c8e;
+}
+
+/* Show Registration Details */
+.show-registration-details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.show-registration-details p {
+    font-size: 16px;
+    color: #4d4d4d;
+}
+
+.show-registration-details button {
+    background-color: #ff9f9f;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.show-registration-details button:hover {
+    background-color: #ff7272;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+

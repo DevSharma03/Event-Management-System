@@ -1,0 +1,106 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100vh;
+
+}
+
+
+/* Section styling for the form */
+section {
+    margin-top: 80px;
+    background-color: #633b63; /* Deep purple background */
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+form label {
+    font-size: 0.9rem;
+    color: #ff6347; /* Tomato red labels */
+    margin-top: 1rem;
+    display: block;
+}
+
+/* Input fields and textarea styling */
+form input[type="text"],
+form input[type="date"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* Textarea styling for resizing */
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    margin-top: 1.5rem;
+    width: 100%;
+    background-color: #ff6347; /* Tomato red button */
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Submit button hover effect */
+button[type="submit"]:hover {
+    background-color: #e5533f; /* Slightly darker red on hover */
+}
+
+/* Image preview container styling */
+#imagePreviewContainer {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#imagePreview {
+    max-width: 100%; /* Ensures the image fits within the container */
+    border-radius: 8px;
+}
+
+#removeImage {
+    background-color: #f44336; /* Red background for remove button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#removeImage:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+

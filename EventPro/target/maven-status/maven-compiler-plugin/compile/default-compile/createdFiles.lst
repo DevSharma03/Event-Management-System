@@ -1,0 +1,3 @@
+com\eventpro\controller\EventController.class
+com\eventpro\model\Event.class
+com\eventpro\EventProApplication.class

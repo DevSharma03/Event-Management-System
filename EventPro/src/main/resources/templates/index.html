@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<section class="index-body">
+    <header class="index-header-main">
+        <div class="header-index-container">
+            <h1 class="logo-index">EventPro <i class="fas fa-calendar-alt"></i></h1>
+            <nav class="index-nav-main">
+                <ul class="index-list-design">
+                    <li><a href="/" th:href="@{/}">Home</a></li>
+                    <li><a href="/create-event" th:href="@{/create-event}">Create Event</a></li>
+                    <li><a href="/explore-events" th:href="@{/explore-events}">Explore Events</a></li>
+                    <li><a href="/contact-me.html" th:href="@{/contact-me}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="index-hero-main">
+        <div class="hero-overlay">
+            <div class="container">
+                <h2>Empowering Event Planning</h2>
+                <p>Your gateway to seamless and interactive event management.</p>
+                <a href="/explore-events" th:href="@{/explore-events}" class="index-cta-button">Explore Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Listing Section -->
+    <section class="index-events-section">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <ul id="index-events1" style="list-style: none;">
+                <!-- Loop over events dynamically using Thymeleaf -->
+                <li th:each="event : ${events}">
+                    <div class="event-card">
+                        <div class="event-details">
+                            <h3 th:text="${event.title}"></h3>
+                            <p th:text="${event.description}"></p>
+                            <p th:text="'Event Date: ' + ${event.date}"></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer class="index-footer-main">
+        <div class="container">
+            <div class="index-footer-info">
+                <p>Follow Us</p>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 EventPro. All Rights Reserved.</p>
+        </div>
+    </footer>
+</section>
+<script src="/js/scripts.js"></script>
+</body>
+</html>
