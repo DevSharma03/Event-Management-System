@@ -3,7 +3,7 @@ package com.eventpro.model;
 public class Event {
     private String title;
     private String description;
-    private String date;
+    private String date; 
 
     // No-argument constructor
     public Event() {
